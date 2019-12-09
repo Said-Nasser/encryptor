@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ENCRYPTION TECHNIQUES</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <!-- <script src="SuperInteger.js" defer></script> -->
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-dark">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-10 text-light mt-5">
+                <h1 class="text-center my-5">ENCRYPTION TECHNIQUES</h1>
+                <hr class="bg-light">
+                <div class="text">
+                    <div class="form-group">
+                        <label>Message as plaintext</label>
+                        <textarea class="form-control" id="msg" cols="100" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-group row" id="p2">
+                        <label class="col-auto col-form-label">Key</label>
+                        <div class="col-auto">
+                            <input type="number" min="1" class="form-control" id="caesar-key" placeholder="Caesar Key">
+                        </div>
+                    </div>
+                    <div class="form-group row" style="display: none;" id="p3">
+                        <label class="col-auto col-form-label">Key</label>
+                        <div class="col-auto">
+                            <input type="text" class="form-control" id="playfair-key" placeholder="Playfair Key">
+                        </div>
+                    </div>
+                    <div class="form-group row" style="display: none;" id="p4">
+                        <label class="col-auto col-form-label">Key</label>
+                        <div class="col-auto">
+                            <input type="text" class="form-control" id="des-key" placeholder="DES Key">
+                        </div>
+                    </div>
+                    <div class="form-group row" style="display: none;" id="p5">
+                        <label class="col-auto col-form-label">Key</label>
+                        <div class="col-auto">
+                            <input type="text" class="form-control" id="rc4-key" placeholder="RC4 Key">
+                        </div>
+                    </div>
+                    <div class="form-row" style="display: none;" id="p6">
+                        <div class="col-auto d-flex align-items-center">
+                            <label for="">P</label>
+                            <input type="number" class="form-control ml-3" id="P" placeholder="P" disabled>
+                        </div>
+                        <div class="col-auto d-flex align-items-center">
+                            <label for="">Q</label>
+                            <input type="number" class="form-control ml-3" id="Q" placeholder="Q" disabled>
+                        </div>
+                        <button class="btn btn-primary" id="generate-btn">Generate</button>
+                    </div>
+                    <div class="form-group">
+                        <label id="p1">Ecrypted Message</label>
+                        <textarea class="form-control" id="enc-msg" cols="100" rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="radios d-flex flex-column flex-sm-row justify-content-around">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" name="dec-tech" id="r1" class="custom-control-input" value="Caeser-Cipher"
+                            checked>
+                        <label class="custom-control-label" for="r1">Caeser Cipher</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" name="dec-tech" id="r2" class="custom-control-input"
+                            value="Playfair-Cipher">
+                        <label class="custom-control-label" for="r2">Playfair Cipher</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" name="dec-tech" id="r3" class="custom-control-input" value="DES">
+                        <label class="custom-control-label" for="r3">DES</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" name="dec-tech" id="r4" class="custom-control-input" value="RC4">
+                        <label class="custom-control-label" for="r4">RC4</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" name="dec-tech" id="r5" class="custom-control-input" value="RSA">
+                        <label class="custom-control-label" for="r5">RSA</label>
+                    </div>
+                    <!-- ----------------------------------------------------------------------- -->
+                    
+                </div>
+                <div class="button text-center mt-5">
+                    <button id="enc-btn" class="btn btn-light">Encrypt</button>
+                    <button id="dec-btn" class="btn btn-secondary mx-2">Decrypt</button>
+                    <button id="rst-btn" class="btn btn-danger">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

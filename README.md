@@ -1,0 +1,1 @@
+web application that comes with some encryption/decryption techniques like caesar cipher, playfair, DES, RC4, and RSA.

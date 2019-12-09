@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #3D2C2E;
+}
+.container {
+    width: 80%;
+    margin: 2.5% auto;
+    text-align: center;
+    background-color: #886F68;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+h1 {
+    margin: 15px;
+    padding: 15px;
+    padding-bottom: 5px;
+    color: #F5EDF0;
+}
+hr {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    
+}
+.text {
+    width: 80%;
+    margin: 0 auto;
+
+    
+}
+.text label {
+    display: block;
+    font-size: 22px;
+    color: #F5EDF0;
+    font-weight: bolder;
+}
+
+p {
+    /* display: inline-block; */
+    width: 60%;
+}
+.span {
+    display: inline-block;
+    /* width: 25%; */
+}
+#p1 {
+    width: 60%;
+}
+#p2, #p3, #p4, #p5, #p6 {
+    width: 39%;
+    text-align: left;
+    font-weight: bolder;
+    color: #F5EDF0;
+    margin-bottom: 3px;
+}
+input[type=number], input[type=text] {
+    border-radius: 5px;
+    margin-left: 10px;
+}
+input[type=number] {
+    width: 37px;
+}
+input[type=text] {
+    width: 120px;
+}
+input[type=number]:focus, input[type=text]:focus {
+    outline: inherit;
+    box-shadow:1px 1px 2px 0px #886F68 inset;
+}
+.radios {
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+.radio {
+    display: inline-block;
+    margin: 15px;
+}
+.radios label {
+    color: #F5EDF0;
+    font-weight: bolder
+}
+textarea {
+    background-color: #F5EDF0;
+    border-radius: 10px;
+    width: 70%;
+    font-size: 25px;
+    padding: 10px;
+}
+textarea:focus {
+    outline: inherit;
+    box-shadow:1px 1px 2px 0px #886F68 inset;
+}
+button {
+    padding: 10px 25px;
+    font-size: 15px;
+    color: #886F68;
+    font-weight: bolder;
+    margin: 10px;
+    background-color: #F5EDF0;
+    border-radius: 10px;
+    border: none;
+}
+button:active {
+    outline: inherit;
+    box-shadow:0px 0px 0px 4px #3D2C2E inset;
+}
+button:focus {
+    outline: inherit;
+}
+.button {
+    margin: 0px;
+    text-align: center;
+}
+#generate-btn {
+    padding: 5px;
+    font-size: 11px;
+}
